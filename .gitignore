@@ -1,0 +1,30 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## Build results
+[Bb]in/
+[Oo]bj/
+
+## Visual Studio Code
+.vscode/
+
+## Rider
+.idea/
+
+## User-specific files
+*.user
+*.rsuser
+*.sln.docstates
+
+## NuGet
+*.nupkg
+packages/
+
+## Logs
+*.log
+
+## OS files
+.DS_Store
+Thumbs.db
