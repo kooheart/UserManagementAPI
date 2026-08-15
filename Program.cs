@@ -9,18 +9,15 @@ builder.Services.AddControllers();
 // Register the user service.
 builder.Services.AddSingleton<IUserService, UserService>();
 
-// Add API explorer for Swagger/OpenAPI.
+// Add API explorer and Swagger.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Enable Swagger in development.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// Enable Swagger.
+app.UseSwagger();
+app.UseSwaggerUI();
 
 // Global exception handling middleware.
 app.UseMiddleware<ExceptionHandlingMiddleware>();
